@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Spam Detection Model</h2>
+
+        <form action="/predict" class="flex flex-col items-center mt-8">
+            <label for="message" class="text-lg font-medium text-gray-700">Enter a message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" class="border border-gray-300 rounded-md p-2 w-full mt-2"></textarea>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Check if Spam</button>
+        </form>
+
+        <div id="result" class="text-center mt-4"></div>
+    </div>
+</body>
+</html>
